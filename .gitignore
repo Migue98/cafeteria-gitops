@@ -1,0 +1,21 @@
+# Nunca versionar secretos ni accesos al clúster
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.kubeconfig
+kubeconfig
+
+# Salidas locales de herramientas
+.terraform/
+*.tfstate
+*.tfstate.*
+charts/**/charts/
+charts/**/tmpcharts/
+
+# IDE y sistema operativo
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
